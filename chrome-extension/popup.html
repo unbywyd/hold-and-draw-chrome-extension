@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="popup.css">    
+</head>
+<body>
+    <div class="press-and-draw-ch-extension">
+        <label for="toggle" class="press-and-draw-switcher">
+            <input type="checkbox" name="enable" id="toggle">
+            <span><span class="enable">Enabled - <b>Turn off</b></span><span class="disable">Disabled - <b>Turn on</b></span></span>
+        </label>    
+        <div class="divider"></div>
+        <label for="key_brush">Hold key name to activate brush</label>
+        <input type="text" id="key_brush" class="press-and-draw-input">
+        <p class="press-and-draw-desc">Specify a keyboard key name <a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values" target="_blank">(KeyboardEvent.key)</a>. After that just hold this button and draw!</p>
+        <div class="divider"></div>
+    
+        <label for="key_arrow">Hold key name to activate arrow mode</label>
+        <input type="text" id="key_arrow" class="press-and-draw-input">
+        <p class="press-and-draw-desc">Specify a keyboard key name <a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values" target="_blank">(KeyboardEvent.key)</a>. After that just hold this button to draw arrows</p>
+        <div class="divider"></div>
+        <label for="color" class="press-and-draw-color-label">Brush color</label>
+        <input type="color" id="color" class="press-and-draw-color-input" name="color" value="#4189ff">
+        <div class="divider"></div>
+        <label for="opacity" class="press-and-draw-color-label">Opacity from 0 to 10</label>
+        <input type="number" id="opacity" class="press-and-draw-color-input" name="color" value="10">
+        <div class="divider"></div>
+        <label for="size" class="press-and-draw-color-label">Size from 2 to 100</label>
+        <input type="range" id="size" min="2" max="100" step="1">
+        <p class="press-and-draw-desc">Or hold the button and turn the wheel</p>
+        <hr>
+        <p>Developed by <a href="https://israelicoder.com/" target="_blank">israelicoder</a> aka <a href="https://unbywyd.com/" target="_blank">unbywyd</a></p>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

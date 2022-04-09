@@ -1,0 +1,132 @@
+body {
+    background-color: #fff;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+a {
+    color: #357374
+}
+
+.press-and-draw-ch-extension {
+    min-width: 320px;
+}
+.press-and-draw-switcher input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    display: block;
+    border: none;
+    margin: -1px;
+}
+.press-and-draw-switcher input:focus {
+    outline:none;
+}
+.press-and-draw-color-label {
+    margin-top: 1em;
+    display: block;
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+.press-and-draw-color-input {
+    display: block;
+    width: 100%;
+    height: 44px;
+    cursor: pointer;
+}
+.press-and-draw-switcher input + span:before {
+    content: '';
+    display: inline-block;
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: red;
+}
+.press-and-draw-switcher input + span .enable {
+    display: none;
+}
+.press-and-draw-switcher input + span .disable {
+    display: block;
+}
+.press-and-draw-switcher input:checked + span .enable {
+    display: block;
+}
+.press-and-draw-switcher input:checked + span .disable {
+    display: none;
+}
+.press-and-draw-switcher input:checked + span:before {
+    background-color: greenyellow;
+}
+.press-and-draw-switcher input:focus + span {
+    border-color: #357374;
+}
+.press-and-draw-switcher > span {
+    border: 2px solid #eef1ee;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    border-radius: 48px;
+    cursor: pointer;
+}
+.divider {
+    margin: .5em;
+}
+.press-and-draw-switcher .disable, .press-and-draw-switcher .enable {
+    display: none;
+}
+.press-and-draw-header .box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+[type="range"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 0;
+}
+.press-and-draw-header img {
+    margin-right: 15px;
+}
+.press-and-draw-header .s2 {
+    font-weight: 400;
+    font-size: .8em;
+}
+.press-and-draw-desc {
+    font-size: .8em;
+}
+.press-and-draw-input {
+    display: block;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 2px solid #eef1ee;
+    padding: 0 10px;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 16px;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.press-and-draw-label {
+    display: block;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+}
